@@ -1,0 +1,123 @@
+body {
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 100vw;
+    grid-template-rows: 60vw auto auto auto auto;
+    justify-content: center;
+}
+
+.landing {
+    //outline: 2px solid black;
+    border-radius: 25px;
+    margin: 70px;
+    background-image: url("media/landing.png");
+    background-size: 105%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.characteristics {
+    position: relative;
+    bottom: 70px;
+    left: 120px;
+    font-size: 18px;
+
+}
+
+.story-summary {
+    margin-right: 50px;
+    font-size: 18px;
+}
+
+.actions {
+    margin-top: 30px;
+    text-decoration: none;
+    font-size: 18px;
+    //font-weight: bold;
+}
+
+.about {
+    display: flex;
+    outline: 1px solid rgb(73, 194, 202);
+    padding: 70px;
+    .left-content {
+        margin-top: -5px;
+        margin-right: 40px;
+    }
+    .action {
+        margin-top: 25px;
+    }
+    .photo {
+        border-radius: 25px;
+    }
+}
+
+.recommendations {
+    display: flex;
+    background-image: url("./media/landing.png");
+    background-size: 115%;
+    background-repeat: no-repeat;
+    padding: 25px;
+}
+
+.recommendation {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    margin: 25px;
+    padding: 25px;
+    padding-bottom: 0px;
+    border-radius: 20px;
+    height: auto;
+    .headshot {
+        align-self: center;
+        border-radius: 100px;
+    }
+    .recommender {
+        margin-top: 15px;
+        text-align: center;
+        font-weight: bold;
+    }
+}
+
+.contact {
+    //outline: 1px solid rgb(17, 129, 163);
+    padding: 70px;
+    padding-bottom: 10px;
+    display: flex;
+    justify-content: space-evenly;
+    .left-content {
+        padding-right: 90px;
+        margin: -5px;
+        p {
+            position: relative;
+            bottom: 25px;
+        }
+    }
+    .right-content {
+        button {
+            border-radius: 15px;
+            border: none;
+            background-color: rgb(73, 194, 202);
+        }
+        button:hover {
+            background-color: rgb(66, 154, 180);
+        }
+    }
+}
+
+.footer {
+    justify-self: center;
+    .copyright {
+        position: relative;
+        bottom: 50px;
+        left: 100px;
+    }
+}
+

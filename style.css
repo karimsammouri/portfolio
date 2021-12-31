@@ -1,0 +1,153 @@
+body {
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 100vw;
+      grid-template-columns: 100vw;
+  -ms-grid-rows: 60vw auto auto auto auto;
+      grid-template-rows: 60vw auto auto auto auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.landing {
+  border-radius: 25px;
+  margin: 70px;
+  background-image: url("media/landing.png");
+  background-size: 105%;
+  background-repeat: no-repeat;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.characteristics {
+  position: relative;
+  bottom: 70px;
+  left: 120px;
+  font-size: 18px;
+}
+
+.story-summary {
+  margin-right: 50px;
+  font-size: 18px;
+}
+
+.actions {
+  margin-top: 30px;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  outline: 1px solid #49c2ca;
+  padding: 70px;
+}
+
+.about .left-content {
+  margin-top: -5px;
+  margin-right: 40px;
+}
+
+.about .action {
+  margin-top: 25px;
+}
+
+.about .photo {
+  border-radius: 25px;
+}
+
+.recommendations {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-image: url("./media/landing.png");
+  background-size: 115%;
+  background-repeat: no-repeat;
+  padding: 25px;
+}
+
+.recommendation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: white;
+  margin: 25px;
+  padding: 25px;
+  padding-bottom: 0px;
+  border-radius: 20px;
+  height: auto;
+}
+
+.recommendation .headshot {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  border-radius: 100px;
+}
+
+.recommendation .recommender {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.contact {
+  padding: 70px;
+  padding-bottom: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.contact .left-content {
+  padding-right: 90px;
+  margin: -5px;
+}
+
+.contact .left-content p {
+  position: relative;
+  bottom: 25px;
+}
+
+.contact .right-content button {
+  border-radius: 15px;
+  border: none;
+  background-color: #49c2ca;
+}
+
+.contact .right-content button:hover {
+  background-color: #429ab4;
+}
+
+.footer {
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.footer .copyright {
+  position: relative;
+  bottom: 50px;
+  left: 100px;
+}
+/*# sourceMappingURL=style.css.map */
