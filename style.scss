@@ -6,7 +6,6 @@
 }
 
 .landing {
-    outline: 2px solid black;
     border-radius: 25px;
     margin: 70px;
     background-image: url("media/landing.png");
@@ -379,13 +378,139 @@
 @media (max-width: 520px) {
     .container {
         display: grid;
-        grid-template-rows: 120vw auto auto auto auto;
+        grid-template-rows: 130vw auto auto auto auto;
     }
     
     .landing {
         border-radius: 0px;
         margin: 0px;
-        background-size: 230%;
+        background-size: 245%;
+    }
+}
+
+@media (max-width: 500px) {
+    .container {
+        display: grid;
+        grid-template-rows: 140vw auto auto auto auto;
+    }
+    .landing {
+        border-radius: 0px;
+        margin: 0px;
+        background-size: 265%;
+    }
+    .recommendations {
+        background-size: 200%;
+    }
+}
+
+@media (max-width: 450px) {
+    .container {
+        display: grid;
+        grid-template-rows: 150vw auto auto auto auto;
+    }
+    .landing {
+        border-radius: 0px;
+        margin: 0px;
+        background-size: 285%;
+    }
+}
+
+@media (max-width: 430px) {
+    .container {
+        display: grid;
+        grid-template-rows: 160vw auto auto auto auto;
+    }
+    .landing {
+        border-radius: 0px;
+        margin: 0px;
+        background-size: 305%;
+    }
+    .recommendations {
+        background-size: 220%;
+    }
+}
+
+@media (max-width: 400px) {
+    .container {
+        display: grid;
+        grid-template-rows: 180vw auto auto auto auto;
+    }
+    .landing {
+        border-radius: 0px;
+        margin: 0px;
+        background-size: 340%;
+    }
+    .recommendations {
+        background-size: 240%;
+    }
+}
+
+@media (max-width: 380px) {
+    .container {
+        display: grid;
+        grid-template-rows: 190vw auto auto auto auto;
+    }
+    .landing {
+        border-radius: 0px;
+        margin: 0px;
+        background-size: 360%;
+    }
+    .recommendations {
+        background-size: 280%;
+    }
+}
+
+@media (max-width: 370px) {
+    .container {
+        display: grid;
+        grid-template-rows: 210vw auto auto auto auto;
+    }
+    .landing {
+        border-radius: 0px;
+        margin: 0px;
+        background-size: 400%;
+    }
+}
+
+@media (max-width: 350px) {
+    .container {
+        display: grid;
+        grid-template-rows: 230vw auto auto auto auto;
+    }
+    .landing {
+        border-radius: 0px;
+        margin: 0px;
+        background-size: 440%;
+    }
+    .recommendations {
+        background-size: 300%;
+    }
+}
+
+@media (max-width: 340px) {
+    .container {
+        display: grid;
+        grid-template-rows: 250vw auto auto auto auto;
+    }
+    .landing {
+        border-radius: 0px;
+        margin: 0px;
+        background-size: 475%;
+    }
+    .recommendations {
+        background-size: 340%;
+    }
+}
+
+@media (max-width: 320px) {
+    .container {
+        display: grid;
+        grid-template-rows: 270vw auto auto auto auto;
+    }
+    .landing {
+        border-radius: 0px;
+        margin: 0px;
+        background-size: 520%;
     }
 }
 
