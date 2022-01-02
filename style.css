@@ -91,6 +91,31 @@
   height: auto;
 }
 
+.recommendation .header {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.recommendation .header img {
+  position: relative;
+  left: 18px;
+}
+
+.recommendation .header a {
+  position: relative;
+  top: 15px;
+  left: 20px;
+  color: #0e76a8;
+  font-size: 32px;
+}
+
+.recommendation .header a :hover {
+  color: #49c2ca;
+  -webkit-transition: color 0.5s;
+  transition: color 0.5s;
+}
+
 .recommendation .headshot {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
@@ -125,6 +150,37 @@
   bottom: 25px;
 }
 
+.contact .left-content a {
+  font-size: 48px;
+  position: relative;
+  bottom: 35px;
+  right: 2px;
+}
+
+.contact .left-content .linkedin {
+  color: #0e76a8;
+}
+
+.contact .left-content .linkedin :hover {
+  color: #429ab4;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
+.contact .left-content .github {
+  color: black;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+  left: 5px;
+}
+
+.contact .left-content .github :hover {
+  color: #429ab4;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+}
+
 .contact .right-content button {
   border-radius: 15px;
   border: none;
@@ -144,5 +200,211 @@
   position: relative;
   bottom: 50px;
   left: 100px;
+}
+
+@media (max-width: 1110px) {
+  .container {
+    -ms-grid-rows: 64vw auto auto auto auto;
+        grid-template-rows: 64vw auto auto auto auto;
+  }
+  .landing {
+    background-size: 120%;
+  }
+  .recommendation-4 {
+    display: none;
+    -webkit-transition: display 0.5s;
+    transition: display 0.5s;
+  }
+}
+
+@media (max-width: 1070px) {
+  .container {
+    -ms-grid-rows: 68vw auto auto auto auto;
+        grid-template-rows: 68vw auto auto auto auto;
+  }
+  .landing {
+    background-size: 130%;
+  }
+}
+
+@media (max-width: 1030px) {
+  .container {
+    -ms-grid-rows: 72vw auto auto auto auto;
+        grid-template-rows: 72vw auto auto auto auto;
+  }
+  .landing {
+    background-size: 130%;
+  }
+}
+
+@media (max-width: 990px) {
+  .container {
+    -ms-grid-rows: 76vw auto auto auto auto;
+        grid-template-rows: 76vw auto auto auto auto;
+  }
+  .landing {
+    background-size: 140%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .landing .signature {
+    position: relative;
+    top: 20px;
+  }
+  .landing .characteristics {
+    position: relative;
+    bottom: 50px;
+  }
+  .landing .story-summary {
+    margin: 60px;
+    margin-top: 0px;
+    margin-bottom: 30px;
+  }
+  .landing .actions {
+    margin: 60px;
+    margin-top: 0px;
+  }
+}
+
+@media (max-width: 890px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 60vw auto auto auto auto;
+        grid-template-rows: 60vw auto auto auto auto;
+  }
+  .landing {
+    border-radius: 0px;
+    margin: 0px;
+    background-size: 120%;
+  }
+}
+
+@media (max-width: 850px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 65vw auto auto auto auto;
+        grid-template-rows: 65vw auto auto auto auto;
+  }
+  .landing {
+    border-radius: 0px;
+    margin: 0px;
+    background-size: 125%;
+  }
+}
+
+@media (max-width: 750px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 80vw auto auto auto auto;
+        grid-template-rows: 80vw auto auto auto auto;
+  }
+  .landing {
+    border-radius: 0px;
+    margin: 0px;
+    background-size: 150%;
+  }
+}
+
+@media (max-width: 670px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 85vw auto auto auto auto;
+        grid-template-rows: 85vw auto auto auto auto;
+  }
+  .landing {
+    border-radius: 0px;
+    margin: 0px;
+    background-size: 160%;
+  }
+}
+
+@media (max-width: 640px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 90vw auto auto auto auto;
+        grid-template-rows: 90vw auto auto auto auto;
+  }
+  .landing {
+    border-radius: 0px;
+    margin: 0px;
+    background-size: 170%;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 95vw auto auto auto auto;
+        grid-template-rows: 95vw auto auto auto auto;
+  }
+  .landing {
+    border-radius: 0px;
+    margin: 0px;
+    background-size: 180%;
+  }
+}
+
+@media (max-width: 560px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 100vw auto auto auto auto;
+        grid-template-rows: 100vw auto auto auto auto;
+  }
+  .landing {
+    border-radius: 0px;
+    margin: 0px;
+    background-size: 190%;
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 110vw auto auto auto auto;
+        grid-template-rows: 110vw auto auto auto auto;
+  }
+  .landing {
+    border-radius: 0px;
+    margin: 0px;
+    background-size: 210%;
+  }
+}
+
+@media (max-width: 540px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 115vw auto auto auto auto;
+        grid-template-rows: 115vw auto auto auto auto;
+  }
+  .landing {
+    border-radius: 0px;
+    margin: 0px;
+    background-size: 220%;
+  }
+}
+
+@media (max-width: 520px) {
+  .container {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-rows: 120vw auto auto auto auto;
+        grid-template-rows: 120vw auto auto auto auto;
+  }
+  .landing {
+    border-radius: 0px;
+    margin: 0px;
+    background-size: 230%;
+  }
 }
 /*# sourceMappingURL=style.css.map */

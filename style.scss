@@ -70,6 +70,24 @@
     padding-bottom: 0px;
     border-radius: 20px;
     height: auto;
+    .header {
+        align-self: center;
+        img {
+            position: relative;
+            left: 18px;
+        }
+        a {
+            position: relative;
+            top: 15px;
+            left: 20px;
+            color: #0e76a8;
+            font-size: 32px;
+            :hover {
+                color: rgb(73, 194, 202);
+                transition: color 0.5s;
+            }
+        }
+    }
     .headshot {
         align-self: center;
         border-radius: 100px;
@@ -94,6 +112,29 @@
             position: relative;
             bottom: 25px;
         }
+        a {
+            font-size: 48px;
+            position: relative;
+            bottom: 35px;
+            right: 2px;
+        }
+        .linkedin {
+            color: #0e76a8;
+            :hover {
+                color: #429ab4;
+                transition: color 0.3s;
+            }
+        }
+        .github {
+            color: black;
+            transition: 0.5s;
+            position: relative;
+            left: 5px;
+            :hover {
+                color: #429ab4;
+                transition: color 0.3s;
+            }
+        }
     }
     .right-content {
         button {
@@ -116,4 +157,191 @@
     }
 }
 
+@media (max-width: 1110px) {
+    .container {
+        grid-template-rows: 64vw auto auto auto auto;
+    }
+    .landing {
+        background-size: 120%;
+    }
+    .recommendation-4 {
+        display: none;
+        transition: display 0.5s;
+    }
+}
+
+@media (max-width: 1070px) {
+    .container {
+        grid-template-rows: 68vw auto auto auto auto;
+    }
+    .landing {
+        background-size: 130%;
+    }
+}
+
+@media (max-width: 1030px) {
+    .container {
+        grid-template-rows: 72vw auto auto auto auto;
+    }
+    .landing {
+        background-size: 130%;
+    }
+}
+
+@media (max-width: 990px) {
+    .container {
+        grid-template-rows: 76vw auto auto auto auto;
+    }
+    .landing {
+        background-size: 140%;
+        flex-direction: column;
+        .signature {
+            position: relative;
+            top: 20px;
+        }
+        .characteristics {
+            position: relative;
+            bottom: 50px;
+        }
+        .story-summary {
+            margin: 60px;
+            margin-top: 0px;
+            margin-bottom: 30px;
+        }
+        .actions {
+            margin: 60px;
+            margin-top: 0px;
+        }
+    }
+}
+
+@media (max-width: 890px) {
+    .container {
+        display: grid;
+        grid-template-rows: 60vw auto auto auto auto;
+    }
+    
+    .landing {
+        border-radius: 0px;
+        margin: 0px;
+        background-size: 120%;
+    }
+}
+
+@media (max-width: 850px) {
+    .container {
+        display: grid;
+        grid-template-rows: 65vw auto auto auto auto;
+    }
+    
+    .landing {
+        border-radius: 0px;
+        margin: 0px;
+        background-size: 125%;
+    }
+}
+
+@media (max-width: 750px) {
+    .container {
+        display: grid;
+        grid-template-rows: 80vw auto auto auto auto;
+    }
+    
+    .landing {
+        border-radius: 0px;
+        margin: 0px;
+        background-size: 150%;
+    }
+}
+
+@media (max-width: 670px) {
+    .container {
+        display: grid;
+        grid-template-rows: 85vw auto auto auto auto;
+    }
+    
+    .landing {
+        border-radius: 0px;
+        margin: 0px;
+        background-size: 160%;
+    }
+}
+
+@media (max-width: 640px) {
+    .container {
+        display: grid;
+        grid-template-rows: 90vw auto auto auto auto;
+    }
+    
+    .landing {
+        border-radius: 0px;
+        margin: 0px;
+        background-size: 170%;
+    }
+}
+
+@media (max-width: 600px) {
+    .container {
+        display: grid;
+        grid-template-rows: 95vw auto auto auto auto;
+    }
+    
+    .landing {
+        border-radius: 0px;
+        margin: 0px;
+        background-size: 180%;
+    }
+}
+
+@media (max-width: 560px) {
+    .container {
+        display: grid;
+        grid-template-rows: 100vw auto auto auto auto;
+    }
+    
+    .landing {
+        border-radius: 0px;
+        margin: 0px;
+        background-size: 190%;
+    }
+}
+
+@media (max-width: 550px) {
+    .container {
+        display: grid;
+        grid-template-rows: 110vw auto auto auto auto;
+    }
+    
+    .landing {
+        border-radius: 0px;
+        margin: 0px;
+        background-size: 210%;
+    }
+}
+
+@media (max-width: 540px) {
+    .container {
+        display: grid;
+        grid-template-rows: 115vw auto auto auto auto;
+    }
+    
+    .landing {
+        border-radius: 0px;
+        margin: 0px;
+        background-size: 220%;
+    }
+}
+
+@media (max-width: 520px) {
+    .container {
+        display: grid;
+        grid-template-rows: 120vw auto auto auto auto;
+    }
+    
+    .landing {
+        border-radius: 0px;
+        margin: 0px;
+        background-size: 230%;
+    }
+}
 
