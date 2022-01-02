@@ -1,8 +1,3 @@
-body {
-  height: 100vh;
-  margin: 0;
-}
-
 .container {
   display: -ms-grid;
   display: grid;
@@ -19,7 +14,7 @@ body {
   border-radius: 25px;
   margin: 70px;
   background-image: url("media/landing.png");
-  background-size: 105%;
+  background-size: 110%;
   background-repeat: no-repeat;
   display: -webkit-box;
   display: -ms-flexbox;
