@@ -6,7 +6,7 @@
 }
 
 .landing {
-    //outline: 2px solid black;
+    outline: 2px solid black;
     border-radius: 25px;
     margin: 70px;
     background-image: url("media/landing.png");
@@ -164,9 +164,11 @@
     .landing {
         background-size: 120%;
     }
+    .recommendations {
+        background-size: 115%;
+    }
     .recommendation-4 {
         display: none;
-        transition: display 0.5s;
     }
 }
 
@@ -198,6 +200,7 @@
         .signature {
             position: relative;
             top: 20px;
+            margin-top: 40px;
         }
         .characteristics {
             position: relative;
@@ -211,7 +214,26 @@
         .actions {
             margin: 60px;
             margin-top: 0px;
+            margin-bottom: 100px;
         }
+    }
+    .about {
+        flex-direction: column;
+        padding: 70px;
+        .left-content {
+            margin-right: 0px;
+        }
+        .action {
+            margin-top: 25px;
+        }
+        .photo {
+            margin-top: 35px;
+            border-radius: 25px;
+            align-self: center;
+        }
+    }
+    .recommendations {
+        background-size: 125%;
     }
 }
 
@@ -220,11 +242,13 @@
         display: grid;
         grid-template-rows: 60vw auto auto auto auto;
     }
-    
     .landing {
         border-radius: 0px;
         margin: 0px;
         background-size: 120%;
+    }
+    .recommendations {
+        background-size: 135%;
     }
 }
 
@@ -233,11 +257,16 @@
         display: grid;
         grid-template-rows: 65vw auto auto auto auto;
     }
-    
     .landing {
         border-radius: 0px;
         margin: 0px;
         background-size: 125%;
+    }
+    .recommendations {
+        background-size: 125%;
+        .recommendation-3 {
+            display: none;
+        }
     }
 }
 
@@ -246,11 +275,13 @@
         display: grid;
         grid-template-rows: 80vw auto auto auto auto;
     }
-    
     .landing {
         border-radius: 0px;
         margin: 0px;
         background-size: 150%;
+    }
+    .recommendations {
+        background-size: 155%;
     }
 }
 
@@ -259,11 +290,13 @@
         display: grid;
         grid-template-rows: 85vw auto auto auto auto;
     }
-    
     .landing {
         border-radius: 0px;
         margin: 0px;
         background-size: 160%;
+    }
+    .recommendations {
+        background-size: 165%;
     }
 }
 
@@ -272,11 +305,13 @@
         display: grid;
         grid-template-rows: 90vw auto auto auto auto;
     }
-    
     .landing {
         border-radius: 0px;
         margin: 0px;
         background-size: 170%;
+    }
+    .recommendations {
+        background-size: 195%;
     }
 }
 
@@ -290,6 +325,15 @@
         border-radius: 0px;
         margin: 0px;
         background-size: 180%;
+    }
+    .recommendations {
+        .recommendation-2 {
+            display: none;
+        }
+        background-size: 160%;
+    }
+    .contact {
+        flex-direction: column;
     }
 }
 

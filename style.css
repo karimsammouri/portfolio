@@ -11,6 +11,7 @@
 }
 
 .landing {
+  outline: 2px solid black;
   border-radius: 25px;
   margin: 70px;
   background-image: url("media/landing.png");
@@ -210,10 +211,11 @@
   .landing {
     background-size: 120%;
   }
+  .recommendations {
+    background-size: 115%;
+  }
   .recommendation-4 {
     display: none;
-    -webkit-transition: display 0.5s;
-    transition: display 0.5s;
   }
 }
 
@@ -252,6 +254,7 @@
   .landing .signature {
     position: relative;
     top: 20px;
+    margin-top: 40px;
   }
   .landing .characteristics {
     position: relative;
@@ -265,6 +268,30 @@
   .landing .actions {
     margin: 60px;
     margin-top: 0px;
+    margin-bottom: 100px;
+  }
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 70px;
+  }
+  .about .left-content {
+    margin-right: 0px;
+  }
+  .about .action {
+    margin-top: 25px;
+  }
+  .about .photo {
+    margin-top: 35px;
+    border-radius: 25px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .recommendations {
+    background-size: 125%;
   }
 }
 
@@ -280,6 +307,9 @@
     margin: 0px;
     background-size: 120%;
   }
+  .recommendations {
+    background-size: 135%;
+  }
 }
 
 @media (max-width: 850px) {
@@ -293,6 +323,12 @@
     border-radius: 0px;
     margin: 0px;
     background-size: 125%;
+  }
+  .recommendations {
+    background-size: 125%;
+  }
+  .recommendations .recommendation-3 {
+    display: none;
   }
 }
 
@@ -308,6 +344,9 @@
     margin: 0px;
     background-size: 150%;
   }
+  .recommendations {
+    background-size: 155%;
+  }
 }
 
 @media (max-width: 670px) {
@@ -321,6 +360,9 @@
     border-radius: 0px;
     margin: 0px;
     background-size: 160%;
+  }
+  .recommendations {
+    background-size: 165%;
   }
 }
 
@@ -336,6 +378,9 @@
     margin: 0px;
     background-size: 170%;
   }
+  .recommendations {
+    background-size: 195%;
+  }
 }
 
 @media (max-width: 600px) {
@@ -349,6 +394,18 @@
     border-radius: 0px;
     margin: 0px;
     background-size: 180%;
+  }
+  .recommendations {
+    background-size: 160%;
+  }
+  .recommendations .recommendation-2 {
+    display: none;
+  }
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
 }
 
