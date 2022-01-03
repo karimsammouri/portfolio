@@ -448,6 +448,12 @@
         background-size: 345vw;
         .left-content {
             margin-top: 40px;
+            .signature {
+                width: 500px;
+            }
+            .characteristics {
+                left: 95px;
+            }
         }
         .summary {
             margin: 60px;
@@ -463,12 +469,18 @@
 
 @media (max-width: 400px) {
     .container {
-        grid-template-rows: 200vw auto auto auto auto;
+        grid-template-rows: 210vw auto auto auto auto;
     }
     .landing {
-        background-size: 380vw;
+        background-size: 400vw;
         .left-content {
             margin-top: 40px;
+            .signature {
+                width: 450px;
+            }
+            .characteristics {
+                left: 70px;
+            }
         }
         .summary {
             margin: 60px;
@@ -482,14 +494,20 @@
     }
 }
 
-@media (max-width: 350px) {
+@media (max-width: 360px) {
     .container {
-        grid-template-rows: 280vw auto auto auto auto;
+        grid-template-rows: 260vw auto auto auto auto;
     }
     .landing {
-        background-size: 530vw;
+        background-size: 490vw;
         .left-content {
             margin-top: 40px;
+            .signature {
+                width: 400px;
+            }
+            .characteristics {
+                display: none;
+            }
         }
         .summary {
             margin: 60px;
