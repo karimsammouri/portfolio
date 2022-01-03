@@ -37,7 +37,7 @@
 .landing .characteristics {
   position: relative;
   bottom: 60px;
-  left: 120px;
+  left: 115px;
   font-size: 18px;
 }
 
@@ -143,6 +143,7 @@
 }
 
 .contact .left-content {
+  padding-right: 50px;
   margin: -5px;
 }
 
@@ -200,27 +201,45 @@
 .footer .copyright {
   position: relative;
   bottom: 50px;
-  left: 100px;
+  left: 105px;
 }
 
 @media (max-width: 1220px) {
   .landing {
     margin: 60px;
-    background-size: 100vw;
+  }
+  .about .photo {
+    width: 454px;
+    height: 385px;
   }
 }
 
 @media (max-width: 1170px) {
   .landing {
     margin: 40px;
-    background-size: 100vw;
+  }
+  .about .photo {
+    width: 437px;
+    height: 370px;
+  }
+  .recommendations {
+    background-size: 110vw;
   }
 }
 
 @media (max-width: 1130px) {
   .landing {
     margin: 20px;
+  }
+  .about .photo {
+    width: 419px;
+    height: 355px;
+  }
+  .recommendations {
     background-size: 100vw;
+  }
+  .recommendations .recommendation-4 {
+    display: none;
   }
 }
 
@@ -233,6 +252,13 @@
   }
   .about {
     border-style: none;
+  }
+  .about .photo {
+    width: 401px;
+    height: 340px;
+  }
+  .recommendations {
+    background-size: 110vw;
   }
 }
 
@@ -260,6 +286,35 @@
     margin: 60px;
     margin-bottom: 100px;
   }
+  .about {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 60px;
+  }
+  .about .left-content {
+    margin-top: -5px;
+    margin-right: 0px;
+  }
+  .about .photo {
+    margin-top: 35px;
+  }
+  .recommendations {
+    background-size: 120vw;
+  }
+  .recommendations .recommendation-3 {
+    display: none;
+  }
+  .contact {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .footer .signature {
+    margin-top: 15px;
+  }
 }
 
 @media (max-width: 850px) {
@@ -270,17 +325,8 @@
   .landing {
     background-size: 155vw;
   }
-  .landing .left-content {
-    margin-top: 30px;
-  }
-  .landing .summary {
-    margin: 60px;
-    margin-top: 0px;
-    margin-bottom: -30px;
-  }
-  .landing .actions {
-    margin: 60px;
-    margin-bottom: 100px;
+  .recommendations {
+    background-size: 135vw;
   }
 }
 
@@ -292,17 +338,8 @@
   .landing {
     background-size: 170vw;
   }
-  .landing .left-content {
-    margin-top: 30px;
-  }
-  .landing .summary {
-    margin: 60px;
-    margin-top: 0px;
-    margin-bottom: -30px;
-  }
-  .landing .actions {
-    margin: 60px;
-    margin-bottom: 100px;
+  .recommendations {
+    background-size: 150vw;
   }
 }
 
@@ -314,17 +351,8 @@
   .landing {
     background-size: 190vw;
   }
-  .landing .left-content {
-    margin-top: 30px;
-  }
-  .landing .summary {
-    margin: 60px;
-    margin-top: 0px;
-    margin-bottom: -30px;
-  }
-  .landing .actions {
-    margin: 60px;
-    margin-bottom: 100px;
+  .recommendations {
+    background-size: 170vw;
   }
 }
 
@@ -336,17 +364,8 @@
   .landing {
     background-size: 210vw;
   }
-  .landing .left-content {
-    margin-top: 30px;
-  }
-  .landing .summary {
-    margin: 60px;
-    margin-top: 0px;
-    margin-bottom: -30px;
-  }
-  .landing .actions {
-    margin: 60px;
-    margin-bottom: 100px;
+  .recommendations {
+    background-size: 210vw;
   }
 }
 
@@ -358,17 +377,11 @@
   .landing {
     background-size: 230vw;
   }
-  .landing .left-content {
-    margin-top: 30px;
+  .recommendations {
+    background-size: 150vw;
   }
-  .landing .summary {
-    margin: 60px;
-    margin-top: 0px;
-    margin-bottom: -30px;
-  }
-  .landing .actions {
-    margin: 60px;
-    margin-bottom: 100px;
+  .recommendations .recommendation-2 {
+    display: none;
   }
 }
 
@@ -380,39 +393,8 @@
   .landing {
     background-size: 245vw;
   }
-  .landing .left-content {
-    margin-top: 30px;
-  }
-  .landing .summary {
-    margin: 60px;
-    margin-top: 0px;
-    margin-bottom: -30px;
-  }
-  .landing .actions {
-    margin: 60px;
-    margin-bottom: 100px;
-  }
-}
-
-@media (max-width: 550px) {
-  .container {
-    -ms-grid-rows: 130vw auto auto auto auto;
-        grid-template-rows: 130vw auto auto auto auto;
-  }
-  .landing {
-    background-size: 245vw;
-  }
-  .landing .left-content {
-    margin-top: 30px;
-  }
-  .landing .summary {
-    margin: 60px;
-    margin-top: 0px;
-    margin-bottom: -30px;
-  }
-  .landing .actions {
-    margin: 60px;
-    margin-bottom: 100px;
+  .recommendations {
+    background-size: 160vw;
   }
 }
 
@@ -424,17 +406,8 @@
   .landing {
     background-size: 265vw;
   }
-  .landing .left-content {
-    margin-top: 30px;
-  }
-  .landing .summary {
-    margin: 60px;
-    margin-top: 0px;
-    margin-bottom: -30px;
-  }
-  .landing .actions {
-    margin: 60px;
-    margin-bottom: 100px;
+  .recommendations {
+    background-size: 170vw;
   }
 }
 
@@ -446,18 +419,6 @@
   .landing {
     background-size: 285vw;
   }
-  .landing .left-content {
-    margin-top: 30px;
-  }
-  .landing .summary {
-    margin: 60px;
-    margin-top: 0px;
-    margin-bottom: -30px;
-  }
-  .landing .actions {
-    margin: 60px;
-    margin-bottom: 100px;
-  }
 }
 
 @media (max-width: 520px) {
@@ -468,17 +429,9 @@
   .landing {
     background-size: 305vw;
   }
-  .landing .left-content {
-    margin-top: 30px;
-  }
-  .landing .summary {
-    margin: 60px;
-    margin-top: 0px;
-    margin-bottom: -30px;
-  }
-  .landing .actions {
-    margin: 60px;
-    margin-bottom: 100px;
+  .about .photo {
+    max-width: 100%;
+    height: auto;
   }
 }
 
@@ -489,18 +442,6 @@
   }
   .landing {
     background-size: 325vw;
-  }
-  .landing .left-content {
-    margin-top: 30px;
-  }
-  .landing .summary {
-    margin: 60px;
-    margin-top: 0px;
-    margin-bottom: -30px;
-  }
-  .landing .actions {
-    margin: 60px;
-    margin-bottom: 100px;
   }
 }
 
@@ -531,6 +472,18 @@
     margin-top: 60px;
     margin-bottom: 100px;
   }
+  .about {
+    padding: 40px;
+  }
+  .recommendations {
+    background-size: 240vw;
+  }
+  .contact {
+    padding: 65px;
+  }
+  .contact .left-content {
+    padding-right: 0px;
+  }
 }
 
 @media (max-width: 400px) {
@@ -541,14 +494,17 @@
   .landing {
     background-size: 400vw;
   }
-  .landing .left-content {
-    margin-top: 40px;
-  }
   .landing .left-content .signature {
     width: 450px;
   }
   .landing .left-content .characteristics {
     left: 70px;
+  }
+  .recommendations {
+    background-size: 275vw;
+  }
+  .contact {
+    padding: 45px;
   }
 }
 
@@ -560,14 +516,17 @@
   .landing {
     background-size: 490vw;
   }
-  .landing .left-content {
-    margin-top: 40px;
-  }
   .landing .left-content .signature {
     width: 400px;
   }
   .landing .left-content .characteristics {
     display: none;
+  }
+  .recommendations {
+    background-size: 470vw;
+  }
+  .contact {
+    padding: 25px;
   }
 }
 /*# sourceMappingURL=style.css.map */

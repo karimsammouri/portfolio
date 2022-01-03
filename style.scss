@@ -6,7 +6,6 @@
 }
 
 .landing {
-    //outline: 2px solid black;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -24,7 +23,7 @@
     .characteristics {
         position: relative;
         bottom: 60px;
-        left: 120px;
+        left: 115px;
         font-size: 18px;
     }
     .summary {
@@ -56,7 +55,6 @@
 }
 
 .recommendations {
-    //outline: 1px solid black;
     display: flex;
     background-image: url("./media/landing.png");
     background-size: 100vw;
@@ -103,6 +101,7 @@
     display: flex;
     justify-content: space-evenly;
     .left-content {
+        padding-right: 50px;
         margin: -5px;
         p {
             position: relative;
@@ -150,28 +149,52 @@
     .copyright {
         position: relative;
         bottom: 50px;
-        left: 100px;
+        left: 105px;
     }
 }
 
 @media (max-width: 1220px) {
     .landing {
         margin: 60px;
-        background-size: 100vw;
+    }
+    .about {
+        .photo {
+            width: 454px;
+            height: 385px;
+        }
     }
 }
 
 @media (max-width: 1170px) {
     .landing {
         margin: 40px;
-        background-size: 100vw;
+    }
+    .about {
+        .photo {
+            width: 437px;
+            height: 370px;
+        }
+    }
+    .recommendations {
+        background-size: 110vw;
     }
 }
 
 @media (max-width: 1130px) {
     .landing {
         margin: 20px;
+    }
+    .about {
+        .photo {
+            width: 419px;
+            height: 355px;
+        }
+    }
+    .recommendations {
         background-size: 100vw;
+        .recommendation-4 {
+            display: none;
+        }
     }
 }
 
@@ -184,6 +207,13 @@
     }
     .about {
         border-style: none;
+        .photo {
+            width: 401px;
+            height: 340px;
+        }
+    }
+    .recommendations {
+        background-size: 110vw;
     }
 }
 
@@ -207,6 +237,31 @@
             margin-bottom: 100px;
         }
     }
+    .about {
+        flex-direction: column;
+        padding: 60px;
+        .left-content {
+            margin-top: -5px;
+            margin-right: 0px;
+        }
+        .photo {
+            margin-top: 35px;
+        }
+    }
+    .recommendations {
+        background-size: 120vw;
+        .recommendation-3 {
+            display: none;
+        }
+    }
+    .contact {
+        flex-direction: column;
+    }
+    .footer {
+        .signature {
+            margin-top: 15px;
+        }
+    }
 }
 
 @media (max-width: 850px) {
@@ -215,18 +270,9 @@
     }
     .landing {
         background-size: 155vw;
-        .left-content {
-            margin-top: 30px;
-        }
-        .summary {
-            margin: 60px;
-            margin-top: 0px;
-            margin-bottom: -30px;
-        }
-        .actions {
-            margin: 60px;
-            margin-bottom: 100px;
-        }
+    }
+    .recommendations {
+        background-size: 135vw;
     }
 }
 
@@ -236,18 +282,9 @@
     }
     .landing {
         background-size: 170vw;
-        .left-content {
-            margin-top: 30px;
-        }
-        .summary {
-            margin: 60px;
-            margin-top: 0px;
-            margin-bottom: -30px;
-        }
-        .actions {
-            margin: 60px;
-            margin-bottom: 100px;
-        }
+    }
+    .recommendations {
+        background-size: 150vw;
     }
 }
 
@@ -257,18 +294,9 @@
     }
     .landing {
         background-size: 190vw;
-        .left-content {
-            margin-top: 30px;
-        }
-        .summary {
-            margin: 60px;
-            margin-top: 0px;
-            margin-bottom: -30px;
-        }
-        .actions {
-            margin: 60px;
-            margin-bottom: 100px;
-        }
+    }
+    .recommendations {
+        background-size: 170vw;
     }
 }
 
@@ -278,18 +306,9 @@
     }
     .landing {
         background-size: 210vw;
-        .left-content {
-            margin-top: 30px;
-        }
-        .summary {
-            margin: 60px;
-            margin-top: 0px;
-            margin-bottom: -30px;
-        }
-        .actions {
-            margin: 60px;
-            margin-bottom: 100px;
-        }
+    }
+    .recommendations {
+        background-size: 210vw;
     }
 }
 
@@ -299,17 +318,11 @@
     }
     .landing {
         background-size: 230vw;
-        .left-content {
-            margin-top: 30px;
-        }
-        .summary {
-            margin: 60px;
-            margin-top: 0px;
-            margin-bottom: -30px;
-        }
-        .actions {
-            margin: 60px;
-            margin-bottom: 100px;
+    }
+    .recommendations {
+        background-size: 150vw;
+        .recommendation-2 {
+            display: none;
         }
     }
 }
@@ -320,39 +333,9 @@
     }
     .landing {
         background-size: 245vw;
-        .left-content {
-            margin-top: 30px;
-        }
-        .summary {
-            margin: 60px;
-            margin-top: 0px;
-            margin-bottom: -30px;
-        }
-        .actions {
-            margin: 60px;
-            margin-bottom: 100px;
-        }
     }
-}
-
-@media (max-width: 550px) {
-    .container {
-        grid-template-rows: 130vw auto auto auto auto;
-    }
-    .landing {
-        background-size: 245vw;
-        .left-content {
-            margin-top: 30px;
-        }
-        .summary {
-            margin: 60px;
-            margin-top: 0px;
-            margin-bottom: -30px;
-        }
-        .actions {
-            margin: 60px;
-            margin-bottom: 100px;
-        }
+    .recommendations {
+        background-size: 160vw;
     }
 }
 
@@ -362,18 +345,9 @@
     }
     .landing {
         background-size: 265vw;
-        .left-content {
-            margin-top: 30px;
-        }
-        .summary {
-            margin: 60px;
-            margin-top: 0px;
-            margin-bottom: -30px;
-        }
-        .actions {
-            margin: 60px;
-            margin-bottom: 100px;
-        }
+    }
+    .recommendations {
+        background-size: 170vw;
     }
 }
 
@@ -383,18 +357,6 @@
     }
     .landing {
         background-size: 285vw;
-        .left-content {
-            margin-top: 30px;
-        }
-        .summary {
-            margin: 60px;
-            margin-top: 0px;
-            margin-bottom: -30px;
-        }
-        .actions {
-            margin: 60px;
-            margin-bottom: 100px;
-        }
     }
 }
 
@@ -404,17 +366,11 @@
     }
     .landing {
         background-size: 305vw;
-        .left-content {
-            margin-top: 30px;
-        }
-        .summary {
-            margin: 60px;
-            margin-top: 0px;
-            margin-bottom: -30px;
-        }
-        .actions {
-            margin: 60px;
-            margin-bottom: 100px;
+    }
+    .about {
+        .photo {
+            max-width: 100%;
+            height: auto;
         }
     }
 }
@@ -425,18 +381,6 @@
     }
     .landing {
         background-size: 325vw;
-        .left-content {
-            margin-top: 30px;
-        }
-        .summary {
-            margin: 60px;
-            margin-top: 0px;
-            margin-bottom: -30px;
-        }
-        .actions {
-            margin: 60px;
-            margin-bottom: 100px;
-        }
     }
 }
 
@@ -466,6 +410,18 @@
             margin-bottom: 100px;
         }
     }
+    .about {
+        padding: 40px;
+    }
+    .recommendations {
+        background-size: 240vw;
+    }
+    .contact {
+        padding: 65px;
+        .left-content {
+            padding-right: 0px;
+        }
+    }
 }
 
 @media (max-width: 400px) {
@@ -475,7 +431,6 @@
     .landing {
         background-size: 400vw;
         .left-content {
-            margin-top: 40px;
             .signature {
                 width: 450px;
             }
@@ -483,6 +438,12 @@
                 left: 70px;
             }
         }
+    }
+    .recommendations {
+        background-size: 275vw;
+    }
+    .contact {
+        padding: 45px;
     }
 }
 
@@ -493,7 +454,6 @@
     .landing {
         background-size: 490vw;
         .left-content {
-            margin-top: 40px;
             .signature {
                 width: 400px;
             }
@@ -501,5 +461,11 @@
                 display: none;
             }
         }
+    }
+    .recommendations {
+        background-size: 470vw;
+    }
+    .contact {
+        padding: 25px;
     }
 }
