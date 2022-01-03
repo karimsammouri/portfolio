@@ -456,12 +456,13 @@
             }
         }
         .summary {
-            margin: 60px;
+            margin: 40px;
             margin-top: 0px;
             margin-bottom: -30px;
         }
         .actions {
-            margin: 60px;
+            margin: 40px;
+            margin-top: 60px;
             margin-bottom: 100px;
         }
     }
@@ -482,15 +483,6 @@
                 left: 70px;
             }
         }
-        .summary {
-            margin: 60px;
-            margin-top: 0px;
-            margin-bottom: -30px;
-        }
-        .actions {
-            margin: 60px;
-            margin-bottom: 100px;
-        }
     }
 }
 
@@ -508,15 +500,6 @@
             .characteristics {
                 display: none;
             }
-        }
-        .summary {
-            margin: 60px;
-            margin-top: 0px;
-            margin-bottom: -30px;
-        }
-        .actions {
-            margin: 60px;
-            margin-bottom: 100px;
         }
     }
 }
