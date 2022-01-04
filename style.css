@@ -457,7 +457,8 @@
     width: 500px;
   }
   .landing .left-content .characteristics {
-    left: 95px;
+    font-size: 17px;
+    left: 100px;
   }
   .landing .summary {
     margin: 40px;
@@ -496,7 +497,7 @@
     width: 450px;
   }
   .landing .left-content .characteristics {
-    left: 70px;
+    left: 75px;
   }
   .recommendations {
     background-size: 275vw;
