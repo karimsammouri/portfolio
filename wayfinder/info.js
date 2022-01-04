@@ -34,19 +34,20 @@ var maxLines;
 function navigate() {
   $("#result").empty();
 
-  addressFrom=$("#fromAddress").val();
-  addressTo=$("#toAddress").val();
+  addressFrom = $("#fromAddress").val();
+  addressTo = $("#toAddress").val();
   url = directionsURL + "?key=" + apiKey + "&from=" + addressFrom + "&to=" + addressTo;
 
-  a=$.ajax({
+  a = $.ajax({
     url: url,
     method: "GET"
-  }).done(function(data) {
+  }).done(function (data) {
     try {
-      maneuvers = data.route.legs[0].maneuvers;}
+      maneuvers = data.route.legs[0].maneuvers;
+    }
     catch {
-        $("#result").append("At least one of the addresses is invalid. Please try again.");
-        throw new Error("Program terminated due to invalid address");
+      $("#result").append("At least one of the addresses is invalid. Please try again.");
+      throw new Error("Program terminated due to invalid address");
     }
     length = maneuvers.length;
     for (i = 0; i < length; i++) {
@@ -62,25 +63,25 @@ function navigate() {
 
     url = geocodingURL + "?key=" + apiKey + "&location=" + addressFrom;
 
-    b=$.ajax({
+    b = $.ajax({
       url: url,
       method: "GET"
-    }).done(function(data) {
+    }).done(function (data) {
       latitude1 = data.results[0].locations[0].displayLatLng.lat;
       longitude1 = data.results[0].locations[0].displayLatLng.lng;
 
       url = geocodingURL + "?key=" + apiKey + "&location=" + addressTo;
 
-      c=$.ajax({
+      c = $.ajax({
         url: url,
         method: "GET"
-      }).done(function(data) {
+      }).done(function (data) {
         latitude2 = data.results[0].locations[0].displayLatLng.lat;
         longitude2 = data.results[0].locations[0].displayLatLng.lng;
 
         url = elevationURL + "?key=" + apiKey + "&width=400&height=300&latLngCollection=" +
-        latitude1 + "," + longitude1 + "," + latitude2 + "," + longitude2;
-        $("#result").append("<img src='" + url + "'><br><br>");
+          latitude1 + "," + longitude1 + "," + latitude2 + "," + longitude2;
+        // $("#result").append("<img src='" + url + "'><br><br>");
 
         obj.maneuvers = maneuvers;
         obj.addressFrom = addressFrom;
@@ -88,36 +89,37 @@ function navigate() {
         obj.elevationURL = url;
         strJSON = JSON.stringify(obj);
 
-        e=$.ajax({
-            url: databaseURL,
-            method: "POST",
-            data: {method: "setLookup", location: "45056", sensor: "web", value: strJSON}
-          }).done(function(data) {
-          }).fail(function(error) {
-            console.log("error", error.statusText);
-          });
-      }).fail(function(error) {
+        e = $.ajax({
+          url: databaseURL,
+          method: "POST",
+          data: { method: "setLookup", location: "45056", sensor: "web", value: strJSON }
+        }).done(function (data) {
+        }).fail(function (error) {
+          console.log("error", error.statusText);
+        });
+      }).fail(function (error) {
         console.log("error", error.statusText);
       });
-    }).fail(function(error) {
+    }).fail(function (error) {
       console.log("error", error.statusText);
     });
-  }).fail(function(error) {
+  }).fail(function (error) {
     console.log("error", error.statusText);
   });
 }
 
 function loadData() {
   $("#historyResult").empty();
+  $("#historyResult").append("Note: Database was hosted by course and is currently defunct.");
 
   date = $("#date").val();
   maxLines = $("#maxLines").val();
 
-  a=$.ajax({
+  a = $.ajax({
     url: databaseURL,
     method: "POST",
-    data: {method: "getLookup", date: date}
-  }).done(function(data) {
+    data: { method: "getLookup", date: date }
+  }).done(function (data) {
     $("#historyResult").append(data);
     $("#historyResult").append("<table>");
     $("#historyResult").append("<tr>");
@@ -144,17 +146,17 @@ function loadData() {
       $("#historyResult").append("</tr>");
     }
     $("#historyResult").append("</table>");
-  }).fail(function(error) {
+  }).fail(function (error) {
     console.log("error", error.statusText);
   });
 }
 
 function navigateLocal(index) {
-  a=$.ajax({
+  a = $.ajax({
     url: databaseURL,
     method: "POST",
-    data: {method: "getLookup", date: date}
-  }).done(function(data) {
+    data: { method: "getLookup", date: date }
+  }).done(function (data) {
     $("#historyResult").empty();
     obj = JSON.parse(data.result[index].value);
     length = obj.maneuvers.length;
@@ -167,10 +169,10 @@ function navigateLocal(index) {
       result = narrative + " The distance is " + distance + " miles. You will arrive in " + time +
         " seconds.<br><img src='" + thumbnail + "'><br><br>";
       $("#historyResult").append(result);
-      }
-      url = obj.elevationURL;
-      $("#historyResult").append("<img src='" + url + "'><br><br>");
-  }).fail(function(error) {
+    }
+    url = obj.elevationURL;
+    $("#historyResult").append("<img src='" + url + "'><br><br>");
+  }).fail(function (error) {
     console.log("error", error.statusText);
   });
 }
