@@ -6,10 +6,10 @@
   Date: Nov 30, 2021
 */
 
-var directionsURL = "http://www.mapquestapi.com/directions/v2/route";
-var geocodingURL = "http://www.mapquestapi.com/geocoding/v1/address";
-var elevationURL = "http://open.mapquestapi.com/elevation/v1/chart";
-var databaseURL = "http://sammouka.aws.csi.miamioh.edu/final.php";
+var directionsURL = "https://www.mapquestapi.com/directions/v2/route";
+var geocodingURL = "https://www.mapquestapi.com/geocoding/v1/address";
+var elevationURL = "https://open.mapquestapi.com/elevation/v1/chart";
+var databaseURL = "https://sammouka.aws.csi.miamioh.edu/final.php";
 var url;
 var apiKey = "loWGIUaCFLACRYfK7uiXgAHUGtCFdGZc";
 var addressFrom;
