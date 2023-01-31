@@ -10,6 +10,7 @@ rights reserved. The following samples are based on screenshots taken on Safari 
 <p>Notice how the section's layout changes as the window's width is shrunk down.</p>
 <img height="300" src="https://github.com/karimsammouri/portfolio/blob/main/Screenshots/Landing.png">
 <img height="300" src="https://github.com/karimsammouri/portfolio/blob/main/Screenshots/LandingShrunk.png">
+<img height="300" src="https://github.com/karimsammouri/portfolio/blob/main/Screenshots/LandingShrunk2.png">
 
 <h2>Story Section</h2>
 <img width="500" src="https://github.com/karimsammouri/portfolio/blob/main/Screenshots/Story.png">
