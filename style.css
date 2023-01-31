@@ -1,25 +1,14 @@
 .container {
-  display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 100vw;
-      grid-template-columns: 100vw;
-  -ms-grid-rows: 56vw auto auto auto auto;
-      grid-template-rows: 56vw auto auto auto auto;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  grid-template-columns: 100vw;
+  grid-template-rows: 56vw auto auto auto auto;
+  justify-content: center;
 }
 
 .landing {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-evenly;
+  align-items: center;
   border-radius: 25px;
   border-style: outset;
   border-width: 10px;
@@ -28,103 +17,78 @@
   background-size: 100vw;
   background-repeat: no-repeat;
 }
-
 .landing .signature {
   position: relative;
   top: 15px;
 }
-
 .landing .characteristics {
   position: relative;
   bottom: 60px;
   left: 115px;
   font-size: 18px;
 }
-
 .landing .summary {
   margin-right: 60px;
   font-size: 18px;
 }
-
 .landing .actions {
   margin-top: 30px;
   font-size: 18px;
 }
 
 .about {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   border-style: solid none none;
   border-width: 1px;
-  border-color: #49c2ca;
+  border-color: rgb(73, 194, 202);
   padding: 80px;
 }
-
 .about .left-content {
   margin-top: -5px;
   margin-right: 40px;
 }
-
 .about .action {
   margin-top: 20px;
 }
-
 .about .photo {
   border-radius: 25px;
 }
 
 .recommendations {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   background-image: url("./media/landing.png");
   background-size: 100vw;
   background-repeat: no-repeat;
   padding: 30px;
 }
-
 .recommendations .recommendation {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  flex-direction: column;
   background: white;
   margin: 30px;
   padding: 25px;
   padding-bottom: 0px;
   border-radius: 25px;
 }
-
 .recommendations .recommendation .header {
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  align-self: center;
 }
-
 .recommendations .recommendation .header .headshot {
   border-radius: 100px;
   position: relative;
   left: 18px;
 }
-
 .recommendations .recommendation .header .linkedin {
   position: relative;
   top: 15px;
   left: 20px;
-  color: #0077b5;
+  color: rgb(0, 119, 181);
   font-size: 32px;
 }
-
 .recommendations .recommendation .header .linkedin :hover {
-  color: #49c2ca;
-  -webkit-transition: color 0.5s;
+  color: rgb(73, 194, 202);
   transition: color 0.5s;
 }
-
 .recommendations .recommendation .recommender {
   margin-top: 10px;
   text-align: center;
@@ -134,70 +98,54 @@
 .contact {
   padding: 80px;
   padding-bottom: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
+  justify-content: space-evenly;
 }
-
 .contact .left-content {
   padding-right: 50px;
   margin: -5px;
 }
-
 .contact .left-content p {
   position: relative;
   bottom: 25px;
 }
-
 .contact .left-content a {
   font-size: 48px;
   position: relative;
   bottom: 35px;
   right: 2px;
 }
-
 .contact .left-content .linkedin {
-  color: #0077b5;
+  color: rgb(0, 119, 181);
   text-decoration: none;
 }
-
 .contact .left-content .linkedin :hover {
   color: #429ab4;
-  -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
-
 .contact .left-content .github {
   color: black;
   text-decoration: none;
   position: relative;
   left: 5px;
 }
-
 .contact .left-content .github :hover {
   color: #429ab4;
-  -webkit-transition: color 0.3s;
   transition: color 0.3s;
 }
-
 .contact .right-content button {
   border-radius: 15px;
   border: none;
-  background-color: #49c2ca;
+  background-color: rgb(73, 194, 202);
 }
-
 .contact .right-content button:hover {
-  background-color: #429ab4;
+  background-color: rgb(66, 154, 180);
 }
 
 .footer {
-  -ms-grid-column-align: center;
-      justify-self: center;
+  justify-self: center;
+  margin-top: 20px;
 }
-
 .footer .copyright {
   position: relative;
   bottom: 50px;
@@ -213,7 +161,6 @@
     height: 385px;
   }
 }
-
 @media (max-width: 1170px) {
   .landing {
     margin: 40px;
@@ -226,7 +173,6 @@
     background-size: 110vw;
   }
 }
-
 @media (max-width: 1130px) {
   .landing {
     margin: 20px;
@@ -242,7 +188,6 @@
     display: none;
   }
 }
-
 @media (max-width: 1080px) {
   .landing {
     margin: 0px;
@@ -261,17 +206,12 @@
     background-size: 110vw;
   }
 }
-
 @media (max-width: 980px) {
   .container {
-    -ms-grid-rows: 70vw auto auto auto auto;
-        grid-template-rows: 70vw auto auto auto auto;
+    grid-template-rows: 70vw auto auto auto auto;
   }
   .landing {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     background-size: 135vw;
   }
   .landing .left-content {
@@ -287,10 +227,7 @@
     margin-bottom: 100px;
   }
   .about {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
     padding: 60px;
   }
   .about .left-content {
@@ -307,17 +244,12 @@
     display: none;
   }
   .contact {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    flex-direction: column;
   }
 }
-
 @media (max-width: 850px) {
   .container {
-    -ms-grid-rows: 80vw auto auto auto auto;
-        grid-template-rows: 80vw auto auto auto auto;
+    grid-template-rows: 80vw auto auto auto auto;
   }
   .landing {
     background-size: 155vw;
@@ -326,11 +258,9 @@
     background-size: 135vw;
   }
 }
-
 @media (max-width: 750px) {
   .container {
-    -ms-grid-rows: 90vw auto auto auto auto;
-        grid-template-rows: 90vw auto auto auto auto;
+    grid-template-rows: 90vw auto auto auto auto;
   }
   .landing {
     background-size: 170vw;
@@ -339,11 +269,9 @@
     background-size: 150vw;
   }
 }
-
 @media (max-width: 700px) {
   .container {
-    -ms-grid-rows: 100vw auto auto auto auto;
-        grid-template-rows: 100vw auto auto auto auto;
+    grid-template-rows: 100vw auto auto auto auto;
   }
   .landing {
     background-size: 190vw;
@@ -352,11 +280,9 @@
     background-size: 170vw;
   }
 }
-
 @media (max-width: 650px) {
   .container {
-    -ms-grid-rows: 110vw auto auto auto auto;
-        grid-template-rows: 110vw auto auto auto auto;
+    grid-template-rows: 110vw auto auto auto auto;
   }
   .landing {
     background-size: 210vw;
@@ -365,11 +291,9 @@
     background-size: 210vw;
   }
 }
-
 @media (max-width: 600px) {
   .container {
-    -ms-grid-rows: 120vw auto auto auto auto;
-        grid-template-rows: 120vw auto auto auto auto;
+    grid-template-rows: 120vw auto auto auto auto;
   }
   .landing {
     background-size: 230vw;
@@ -381,11 +305,9 @@
     display: none;
   }
 }
-
 @media (max-width: 550px) {
   .container {
-    -ms-grid-rows: 130vw auto auto auto auto;
-        grid-template-rows: 130vw auto auto auto auto;
+    grid-template-rows: 130vw auto auto auto auto;
   }
   .landing {
     background-size: 245vw;
@@ -394,11 +316,9 @@
     background-size: 160vw;
   }
 }
-
 @media (max-width: 540px) {
   .container {
-    -ms-grid-rows: 140vw auto auto auto auto;
-        grid-template-rows: 140vw auto auto auto auto;
+    grid-template-rows: 140vw auto auto auto auto;
   }
   .landing {
     background-size: 265vw;
@@ -407,21 +327,17 @@
     background-size: 170vw;
   }
 }
-
 @media (max-width: 530px) {
   .container {
-    -ms-grid-rows: 150vw auto auto auto auto;
-        grid-template-rows: 150vw auto auto auto auto;
+    grid-template-rows: 150vw auto auto auto auto;
   }
   .landing {
     background-size: 285vw;
   }
 }
-
 @media (max-width: 520px) {
   .container {
-    -ms-grid-rows: 160vw auto auto auto auto;
-        grid-template-rows: 160vw auto auto auto auto;
+    grid-template-rows: 160vw auto auto auto auto;
   }
   .landing {
     background-size: 305vw;
@@ -431,21 +347,17 @@
     height: auto;
   }
 }
-
 @media (max-width: 510px) {
   .container {
-    -ms-grid-rows: 170vw auto auto auto auto;
-        grid-template-rows: 170vw auto auto auto auto;
+    grid-template-rows: 170vw auto auto auto auto;
   }
   .landing {
     background-size: 325vw;
   }
 }
-
 @media (max-width: 495px) {
   .container {
-    -ms-grid-rows: 180vw auto auto auto auto;
-        grid-template-rows: 180vw auto auto auto auto;
+    grid-template-rows: 180vw auto auto auto auto;
   }
   .landing {
     background-size: 345vw;
@@ -484,11 +396,9 @@
     padding-right: 0px;
   }
 }
-
 @media (max-width: 400px) {
   .container {
-    -ms-grid-rows: 210vw auto auto auto auto;
-        grid-template-rows: 210vw auto auto auto auto;
+    grid-template-rows: 210vw auto auto auto auto;
   }
   .landing {
     background-size: 400vw;
@@ -507,11 +417,9 @@
     padding-bottom: 10px;
   }
 }
-
 @media (max-width: 360px) {
   .container {
-    -ms-grid-rows: 260vw auto auto auto auto;
-        grid-template-rows: 260vw auto auto auto auto;
+    grid-template-rows: 260vw auto auto auto auto;
   }
   .landing {
     background-size: 490vw;
@@ -529,5 +437,4 @@
     padding: 25px;
     padding-bottom: 10px;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
