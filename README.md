@@ -11,11 +11,11 @@ rights reserved. The following samples are based on screenshots taken on Safari 
 <img height="300" src="https://github.com/karimsammouri/portfolio/blob/main/Screenshots/Landing.png">
 <img height="300" src="https://github.com/karimsammouri/portfolio/blob/main/Screenshots/LandingShrunk.png">
 
-<h2>About Section</h2>
-<img height="300" src="https://github.com/karimsammouri/portfolio/blob/main/Screenshots/About.png">
+<h2>Story Section</h2>
+<img width="500" src="https://github.com/karimsammouri/portfolio/blob/main/Screenshots/Story.png">
 
 <h2>Testimonial Section</h2>
-<img height="300" src="https://github.com/karimsammouri/portfolio/blob/main/Screenshots/Testimonial.png">
+<img width="500" src="https://github.com/karimsammouri/portfolio/blob/main/Screenshots/Testimonial.png">
 
 <h2>Contact Section</h2>
-<img height="300" src="https://github.com/karimsammouri/portfolio/blob/main/Screenshots/Contact.png">
+<img width="500" src="https://github.com/karimsammouri/portfolio/blob/main/Screenshots/Contact.png">
