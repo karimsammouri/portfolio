@@ -7,13 +7,15 @@ responsiveness and dynamic adaptation to varying window sizes. This project is w
 rights reserved. The following samples are based on screenshots taken on Safari running on a 2019 15-inch Macbook Pro.</p>
   
 <h2>Landing Section</h2>
-<p>Notice how the section's layout changes as the window's width is shrunk down.
-<img width="300" src="https://github.com/karimsammouri/portfolio/blob/main/Screenshots/Landing1.png">
+<p>Notice how the section's layout changes as the window's width is shrunk down.</p>
+<img height="300" src="https://github.com/karimsammouri/portfolio/blob/main/Screenshots/Landing.png">
+<img height="300" src="https://github.com/karimsammouri/portfolio/blob/main/Screenshots/LandingShrunk.png">
 
-<img width="300" src="https://github.com/karimsammouri/portfolio/blob/main/Screenshots/Landing2.png">
+<h2>About Section</h2>
+<img height="300" src="https://github.com/karimsammouri/portfolio/blob/main/Screenshots/About.png">
 
-<img width="300" src="https://github.com/karimsammouri/MU-CSE-382/blob/main/Project02%20-%20US%20Tax%20Information/Screenshots/QueryTypes.png">
+<h2>Testimonial Section</h2>
+<img height="300" src="https://github.com/karimsammouri/portfolio/blob/main/Screenshots/Testimonial.png">
 
-<img width="300" src="https://github.com/karimsammouri/MU-CSE-382/blob/main/Project02%20-%20US%20Tax%20Information/Screenshots/QueryTypes.png">
-
-<img width="300" src="https://github.com/karimsammouri/MU-CSE-382/blob/main/Project02%20-%20US%20Tax%20Information/Screenshots/QueryTypes.png">
+<h2>Contact Section</h2>
+<img height="300" src="https://github.com/karimsammouri/portfolio/blob/main/Screenshots/Contact.png">
