@@ -8,3 +8,12 @@ rights reserved. The following samples are based on screenshots taken on Safari 
   
 <h2>Landing Section</h2>
 <p>Notice how the section's layout changes as the window's width is shrunk down.
+<img width="300" src="https://github.com/karimsammouri/portfolio/blob/main/Screenshots/Landing1.png">
+
+<img width="300" src="https://github.com/karimsammouri/portfolio/blob/main/Screenshots/Landing2.png">
+
+<img width="300" src="https://github.com/karimsammouri/MU-CSE-382/blob/main/Project02%20-%20US%20Tax%20Information/Screenshots/QueryTypes.png">
+
+<img width="300" src="https://github.com/karimsammouri/MU-CSE-382/blob/main/Project02%20-%20US%20Tax%20Information/Screenshots/QueryTypes.png">
+
+<img width="300" src="https://github.com/karimsammouri/MU-CSE-382/blob/main/Project02%20-%20US%20Tax%20Information/Screenshots/QueryTypes.png">
