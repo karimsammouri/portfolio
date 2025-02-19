@@ -11,9 +11,6 @@ responsiveness and dynamic adaptation to varying window sizes. Personal project 
 <img height="300" src="https://github.com/karimsammouri/portfolio/blob/main/Screenshots/LandingShrunk.png">
 <img height="300" src="https://github.com/karimsammouri/portfolio/blob/main/Screenshots/LandingShrunk2.png">
 
-<h2>Story Section</h2>
-<img width="500" src="https://github.com/karimsammouri/portfolio/blob/main/Screenshots/Story.png">
-
 <h2>Testimonial Section</h2>
 <img width="500" src="https://github.com/karimsammouri/portfolio/blob/main/Screenshots/Testimonial.png">
 
